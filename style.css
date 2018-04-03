@@ -1,0 +1,34 @@
+body {
+    background-image: url("https://wallpapercave.com/wp/9nqDTOp.jpg");
+    margin: auto; 
+}
+
+h1 {
+    color: white;
+    font-family: 'Trebuchet MS';
+}
+
+.sentence {
+    color: pink;
+    font-family: 'Trebuchet MS';
+}
+
+div {
+    text-align: center;
+}
+
+.button {
+    background-color: forestgreen;
+    color: white;
+    border-radius: 20px; 
+}
+
+.button:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 20px; 
+}
+
+.photo {
+    display: none;
+}

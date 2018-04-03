@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Astro Weight Calculator</title>
+  <link href="style.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body>
+  <!-- Write your markup here  -->
+  <div>
+    <h1>Zach's Astro Weight Calculator</h1>
+  </div>
+  <div id="photo">
+    <img id = "Moon" class="photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-MP5b5P-Oll4%2FTVa_yxRn6LI%2FAAAAAAAAAAc%2FEhb_3avUmh8%2Fs1600%2Ffull%252Bmoon.jpg&f=1" />
+    <img id = "Mercury" class="photo" src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.2r9Yd9gGVJTrOBdFucMgawAAAA%26pid%3D15.1&f=1" />
+    <img id = "Venus" class="photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fphysicsforme.files.wordpress.com%2F2012%2F01%2Fvenus2.jpg%3Fw%3D594&f=1" />
+    <img id = "Earth" class="photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-dVz_71071d4%2FUbp6rVJtJvI%2FAAAAAAAA6DU%2F-5I0LPsyL5s%2Fs400%2F1.jpg&f=1" />
+    <img id = "Mars" class="photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.dailygalaxy.com%2Fphotos%2Funcategorized%2F2008%2F05%2F07%2Fr7996_18457.jpg&f=1" />
+    <img id = "Jupiter" class="photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-KCJbd_3WL4Y%2FUBumWYWvBKI%2FAAAAAAAASI4%2FmZFOZn3JPMI%2Fs1600%2Fjupiter.jpg&f=1" />
+    <img id = "Saturn" class="photo" src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fgoddessinspired.files.wordpress.com%2F2012%2F04%2Fsaturn-full-size.jpg&f=1" />
+    <img id = "Uranus" class="photo" src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.C0W9eS1hrhhNuy5vz9fYdwAAAA%26pid%3D15.1&f=1" />
+    <img id = "Neptune" class="photo" src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FwW49Cc9cGis%2Fhqdefault.jpg&f=1" />
+    <img id = "Pluto" class="photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fone-org.s3.amazonaws.com%2Fus%2Fwp-content%2Fuploads%2F2015%2F07%2Fpluto.png&f=1" />
+    <img id = "Sun" class="photo" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.webexhibits.org%2Fcausesofcolor%2Fimages%2Fcontent%2Feit_19970914_0121_304Z.jpg&f=1" />
+  </div>
+  <div>
+    <br>
+    <input id="user-weight" type="text" placeholder="Weight (lbs)" />
+    <select id="planets">
+    </select>
+    <p class="sentence">
+      <input type="checkbox" id="checkbox" /> Click here to exclude Pluto from the list.</p>
+    <p id="output" class="sentence"></p>
+    <button id="calculate-button" class="button" onClick="calculateWeight('planets');">Calculate</button>
+    <p class="sentence">If you have another planet to add, enter the name and multiplier below:</p>
+    <p>
+      <input type="text" placeholder="Name of Planet" id="input-newplanet" />
+    </p>
+    <p>
+      <input type="text" placeholder="Multiplier" id="input-multiplier" />
+    </p>
+    <p>
+      <button id="add-planet" class="button">Add Planet</button>
+    </p>
+  </div>
+  <script src="js\jquery-3.3.1.js"></script>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+</html>
